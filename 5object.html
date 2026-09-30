@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <time> object</time>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script> 
+       /* const pro={  
+            name:'pri',
+            price:133
+        };
+        console.log(pro);
+        console.log(pro.name);
+        pro.name='hvk';
+        console.log(pro.name)
+        delete pro.name;
+        console.log(pro);
+        */                  
+
+        const pro2={
+            name:'nbb',
+            ['deliver-time']:'1 day' ,   //here if use . method then js think you use - ,so bracket method is used
+           // 'deliver-time':'1 day'    //here if use . method then js think you use - ,so bracket method is used ,,also you can write like thi=
+
+           rating: {               //nested object
+            str:4.5,
+            count:9           
+
+           },
+
+           fun: function op(){               //nested object of fumctiom
+            console.log('fun inside the obj');
+
+           }
+        };
+        console.log(pro2.name);
+        console.log(pro2['deliver-time']);
+        console.log(pro2.rating.str);
+        pro2.fun();
+
+
+        console.log(JSON.stringify(pro2));//json.stringify convert js object to json
+        //json is js object basic diffrence is it use "" this notation insted og '',and do not use function like js object
+        const jsonstr=JSON.stringify(pro2);
+       console.log (JSON.parse(jsonstr));//convert json.parse to js object
+
+
+
+         console.log('hello'.length);
+         console.log('hello'.toUpperCase());//hello act as a object called autoboxing
+
+
+
+
+
+
+        const ob1={
+            me:'knv'
+        };
+        const ob2=ob1;//copy reference
+        ob1.me='bnvbk';
+        console.log(ob1);
+        console.log(ob2);
+const ob3={
+    me:'bnvbk'
+};
+console.log(ob3===ob1);
+console.log(ob1===ob2);
+
+
+
+
+const ob4={
+    me:'bnvbk',
+
+
+    method: function f1(){
+        console.log('method')
+    }
+};
+
+</script>
+</body>
+</html>

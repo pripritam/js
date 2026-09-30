@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> rock paper scissor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p> rock paper scissor</p>
+    <button onclick="
+     const random=Math.random();
+     //console.log(random);
+       let  computermove='';
+     if(random>=0 && random<1/3){
+        computermove='rock';
+     }else if(random>=1/3 && random<2/3){
+        computermove='paper';
+     }
+     else if(random>=2/3 && random<1){
+         computermove='scissor';//scope
+     }
+         console.log(computermove);
+         let result='';
+         if(computermove==='rock'){
+         result='tie';
+         }
+         else if(computermove==='paper'){
+         result='you loose';
+         }
+         if(computermove==='scissor'){
+         result='you win';
+         }
+
+         alert('you picked rock.'+'compute picked '+computermove+' '+result)
+     "> rock</button>
+
+
+    <button  onclick="
+     const random=Math.random();
+     //console.log(random);
+       let  computermove='';
+     if(random>=0 && random<1/3){
+        computermove='rock';
+     }else if(random>=1/3 && random<2/3){
+        computermove='paper';
+     }
+     else if(random>=2/3 && random<1){
+         computermove='scissor';//scope
+     }
+         console.log(computermove);
+         let result='';
+         if(computermove==='rock'){
+         result='you win ';
+         }
+         else if(computermove==='paper'){
+         result='tie';
+         }
+         if(computermove==='scissor'){
+         result='you loose';
+         }
+
+         alert('you picked paper.'+'compute picked '+computermove+' '+result)
+     " >paper</button>
+
+
+    <button onclick="
+     const random=Math.random();
+     //console.log(random);
+       let  computermove='';
+     if(random>=0 && random<1/3){
+        computermove='rock';
+     }else if(random>=1/3 && random<2/3){
+        computermove='paper';
+     }
+     else if(random>=2/3 && random<1){
+         computermove='scissor';//scope
+     }
+         console.log(computermove);
+         let result=''; 
+         if(computermove==='rock'){
+         result='you loose';
+         }
+         else if(computermove==='paper'){
+         result='you win';
+         }
+         if(computermove==='scissor'){
+         result='tie';
+         }
+
+         alert('you picked scissor.'+'compute picked '+computermove+' '+result)
+     "> scissor</button>
+
+
+    <script>
+
+
+    </script>
+</body>
+</html>

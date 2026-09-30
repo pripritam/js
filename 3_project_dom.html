@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 3</title>
+</head>
+<body>
+
+    
+
+<p> youTube subscribe Button </p>
+<button onclick="
+subscribe();
+
+"class="sub-button">Subscribe</button>   
+ 
+
+
+
+<p> Amazon Shipping Calculator</p>
+<input placeholder="cost of order" class="js-cost-input" onkeydown="//onekeydown help to select key in keyboard
+handlecostkeydown();     //event.key select  which key symbol you enter
+">
+<button onclick="
+calculatetotal();
+"> Calculte</button>
+
+<p class="js-total-cost"></p>;
+
+<script> 
+
+
+                              //  String(25);//convert value to a string
+                            //    window.document;
+                             //   window.alert;//window give web or browswe
+
+
+
+
+            function handlecostkeydown(){
+                if(event.key==='Enter'){
+                calculatetotal();
+        }
+
+            }
+
+
+
+
+        function calculatetotal(){
+        const inputelement=    document.querySelector('.js-cost-input');
+        let cost=Number(inputelement.value );//without using 'Number' it acct as string       // value enter in side placeholder like innerhtml
+        if(cost<40){
+            cost+=10;
+        }
+        document.querySelector('.js-total-cost')
+        .innerHTML='$'+cost
+
+        }
+
+
+
+        
+
+
+
+
+    function subscribe(){
+            const button=document.querySelector('.sub-button');
+
+            if(button.innerText==='subscribe'){  ////like innerhtml but innertext ignore spaces onlt take text
+            button.innerHTML='subscribed'
+            }
+            else{
+            button.innerHTML='subscribe'
+}
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <style>
+
+
+          body{
+            font-family: arial;
+        }
+
+
+
+        .subscribe-button{
+            border: none;
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom:30px ;
+        }
+
+        .is-subscribe{
+            background-color:rgb(240 ,240,240);
+            color: black;
+
+        }
+
+
+        .cost-input{
+            font-size: 15px;
+            /*
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            */
+            padding: 10px;
+
+        }
+
+
+        .calculate-button{
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 15px;
+            padding: 12px 15px;
+            cursor: pointer;
+        }
+
+      
+
+
+    </style>
+
+
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 5</title>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    
+
+<p> youTube subscribe Button </p>
+<button onclick="
+subscribe();
+
+"class="sub-button subscribe-button">subscribe</button>   
+ 
+
+
+
+<p> Amazon Shipping Calculator</p>
+<input placeholder="cost of order" class="js-cost-input cost-input" onkeydown="//onekeydown help to select key in keyboard
+handlecostkeydown();     //event.key select  which key symbol you enter
+">
+<button onclick="
+calculatetotal();
+" class="calculate-button"> Calculte</button>
+
+<p class="js-total-cost"></p>;
+
+<script> 
+
+
+                              //  String(25);//convert value to a string
+                            //    window.document;
+                             //   window.alert;//window give web or browswe
+
+
+
+
+            function handlecostkeydown(){
+                if(event.key==='Enter'){
+                calculatetotal();
+        }
+
+            }
+
+
+
+
+        function calculatetotal(){
+        const inputelement=    document.querySelector('.js-cost-input');
+        let cost=Number(inputelement.value );//without using 'Number' it acct as string       // value enter in side placeholder like innerhtml
+        if(cost<40){
+            cost+=10;
+        }
+        document.querySelector('.js-total-cost')
+        .innerHTML='$'+cost
+
+        }
+
+
+
+        
+
+
+
+
+    function subscribe(){
+            const button=document.querySelector('.sub-button');
+
+            if(button.innerText==='subscribe'){  ////like innerhtml but innertext ignore spaces onlt take text
+            button.innerHTML='subscribed'
+            button.classList.add('is-subscribe');
+            }
+            else{
+            button.innerHTML='subscribe'
+            button.classList.remove('is-subscribe');
+}
+    }
+
+    </script>
+</body>
+</html>

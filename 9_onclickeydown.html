@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Example</title>
+</head>
+
+<body>
+
+    <input 
+        placeholder="Type something"
+        onkeydown="checkKey(event)"
+    >
+
+    <script>
+        function checkKey(event) {
+
+            if (event.key === 'Enter') {
+                console.log('You pressed Enter');
+            }
+
+            if (event.key === 'Backspace') {
+                console.log('You pressed Backspace');
+            }
+        }
+    </script>
+
+</body>
+</html>

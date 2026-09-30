@@ -1,0 +1,88 @@
+<!-- HERE DO NOT USE ALERT AND UPDATE ROCK PAER SCISSOR -->
+ <!-- improve version of rock paper scissor -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> rock paper scissor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+     <link rel="stylesheet" href="9_project_RPSaddingfunction.css">
+
+    
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <p class="title"> rock paper scissor game</p>
+    <button onclick=" 
+    playgame('rock');
+
+     "  class="move-button">     <img src="rock-emoji.png" class="move-icon">     </button>
+
+
+    <button  onclick="
+    playgame('paper');
+    
+     " class="move-button">     <img src="paper-emoji.png" class="move-icon">   </button>
+
+
+    <button onclick="
+    playgame('scissor')
+     
+     "class="move-button">        <img src="scissor-emoji.png" class="move-icon">     </button>
+
+
+
+
+
+            <p class="js-result result"></p>
+
+            <p class="js-moves"> 
+              
+            </p>
+
+            <P class="js-score score"  >  </P>
+
+
+
+
+
+
+
+            <button 
+            onclick="
+            score.losses=0;
+            score.ties=0;
+            score.wins=0
+            updatescoreelement();
+            " class="reset-button"> Reset score</button>
+
+            <button class="auto-play"
+            onclick="
+            autoplay();">Auto Play</button>
+
+     
+
+
+<script src="9_project_RPSaddingfunction.js">
+</script>
+</body>
+</html>
